@@ -12,7 +12,7 @@ A place for practice queries to live forever :)
 <br></br>
 
 * There isn't much variation across the order status groups based on the heat map. I conducted further analysis to find the standard deviation between each of the status groups.
-    * The heat map wasn't granular enough to reflect that in a sum of almost five trillion dollars, that the stddev was 2 billion for groups F and O. Small compared to the trillions, but also a small fortune. 
+    * The heat map wasn't granular enough to reflect that in a sum of almost five trillion dollars, that the stddev was 2 billion for groups F and O. Small compared to the trillions, but also a fortune in its own right. 
     * With that being said it's all still sample data. 
 
 ![query_1_heatmap](/resources/query_1_stddev.png)
