@@ -14,7 +14,7 @@ GROUP BY 1,2
 ORDER BY 1
 
 -- Sub query for further analysis
-SELECT o_orderstatus, avg(total_price)
+SELECT o_orderstatus, STDDEV(total_price)
 FROM(
      SELECT n.n_name, o.o_orderstatus, sum(o.o_totalprice) as total_price
      FROM customer c
