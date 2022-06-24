@@ -33,4 +33,4 @@ FROM part p
 JOIN partsupp ps
    on p.p_partkey = ps.ps_partkey
 GROUP BY 1,2
-ORDER BY 1
+ORDER BY 1,2
