@@ -18,3 +18,11 @@ A place for practice queries to live forever :)
 ![query_1_heatmap](/resources/query_1_stddev.png)
 
 
+<br></br>
+
+
+### QUERY 2
+* This query returns a table that has a break of the total monetary amount and a count of the supply of parts per manufacturer x brand. It includes the PART table (200 Million Rows) and the PARTSUPP table (800 Million Rows)
+
+![query_1_heatmap](/resources/query_2_screenshot.png)
+

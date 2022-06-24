@@ -25,3 +25,12 @@ FROM(
      GROUP BY 1,2
      ORDER BY 1)
 GROUP BY 1
+
+-- query_2
+-- total amount in supply per brand, per manufacturer
+SELECT p.p_mfgr,p.p_brand,AVG(ps.ps_availqty * ps.ps_supplycost) as average_total_supply_amount
+FROM part p
+JOIN partsupp ps
+   on p.p_partkey = ps.ps_partkey
+GROUP BY 1,2
+ORDER BY 1
