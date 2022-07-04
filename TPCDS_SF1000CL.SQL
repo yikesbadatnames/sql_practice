@@ -34,3 +34,13 @@ JOIN partsupp ps
    on p.p_partkey = ps.ps_partkey
 GROUP BY 1,2
 ORDER BY 1,2
+
+
+-- query 3
+-- count how many comments have slyly in them
+WITH cte as 
+         (SELECT ps_partkey, ps_comment
+         FROM partsupp
+         WHERE ps_comment LIKE '%slyly%')
+SELECT count(ps_comment)
+FROM cte
