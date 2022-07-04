@@ -44,3 +44,19 @@ WITH cte as
          WHERE ps_comment LIKE '%slyly%')
 SELECT count(ps_comment)
 FROM cte
+
+
+-- query 4 
+-- top selling parts
+WITH sum_rev as 
+     (SELECT l.l_partkey, SUM(o.o_totalprice) as total_price
+      FROM lineitem l
+      JOIN orders o
+          on l.l_orderkey = o.o_orderkey
+      GROUP BY 1),
+ranking_sum as (SELECT l_partkey, total_price, dense_rank() 
+                     over(order by total_price DESC) as rnk
+                    FROM sum_rev) 
+SELECT l_partkey, total_price, rnk
+FROM ranking_sum
+WHERE rnk <= 10

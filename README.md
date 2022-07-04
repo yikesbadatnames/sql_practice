@@ -26,3 +26,12 @@ A place for practice queries to live forever :)
 
 ![query_1_heatmap](/resources/query_2_screenshot.png)
 
+### QUERY 3
+* just to test strings in the 'where' clause. 
+
+<br></br>
+
+
+### QUERY 4
+* The top 10 parts sold by revenue. It includes the ORDERS table (1.5 Billion) and the lineitem table (6 Billion).
+![query_1_heatmap](/resources/query_4_ss.png)
